@@ -14,12 +14,20 @@ nombre_completo = input()
 
 manzanas_en_stock = 20
 precio_manzana = 5 #precio de cada manzana
-print("Señor:", nombre_completo)
+print("Bienvenido a la tienda de Manzanas, Señor:", nombre_completo, ".")
 print("Actualmente tenemos", manzanas_en_stock, "manzanas en stock") 
 print("El precio de cada manzana es de COP$:", precio_manzana)
 
 #4 - Preguntar al cliente cuantas manzanas desea comprar 
 print("Por favor nos indica cuantas manzanas quiere comprar?")
+
+#4.1 - Validar si la cantidad solicitada es valida
+if manzanas > manzanas_en_stock:
+  print("Excuse, en el momento no contamos con la cantidad de manzanas deseadas")
+else
+#Calcular el valor total y mostrarlo
+total_compra_manzanas = manzanas_comprar * 5
+print("Usted compró {manzanas_comprar} manzanas_comprar, el precio total a pagar es de {total_compra_manzanas}")
 
 #5 - El cliente ingresa el número de manzanas que desea comprar 
 manzanas_comprar = input()
